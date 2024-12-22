@@ -1,0 +1,85 @@
+.main-nav {
+  min-height: 40px; /* Reduce height */
+  width: 100%;
+  margin: 0 auto;
+  border-top: solid 3px #ef8236;
+  box-shadow: 0px 1px 5px #00000033;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  background-color: #f8f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 100%;
+  min-width: 90%; /* Slightly reduced width for better responsiveness */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  padding: 0 15px; /* Adjust padding to match reduced height */
+  width: 80px; /* Smaller logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.nav-item {
+  margin: 0 5px; /* Tighten spacing */
+  font-size: 0.85rem; /* Reduce font size slightly */
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(69, 69, 69);
+  transition: 0.2s;
+}
+
+.nav-btn {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 8px 16px; /* Adjust padding to match reduced height */
+}
+
+.navbar .navbar-1 form {
+  flex-grow: 1;
+  padding: 0 10px;
+  position: relative;
+}
+
+.navbar .navbar-1 form input {
+  min-width: 85%;
+  margin: 0;
+  padding: 6px 8px 6px 28px; /* Adjust padding for compact design */
+  font-size: 12px;
+  border: solid 1px #0000003e;
+  border-radius: 3px;
+}
+
+.nav-links {
+  padding: 5px 10px; /* Compact padding */
+  border: solid 1px blue;
+  border-radius: 3px;
+  background-color: #e7f8fe;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1120px) {
+  .navbar .navbar-1 form {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .slide-in-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .navbar .navbar-1 .res-nav {
+    display: none;
+  }
+}
